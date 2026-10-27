@@ -1,0 +1,5 @@
+# Cache and temporary files
+tools/.cache/
+*.tmp
+.DS_Store
+Thumbs.db

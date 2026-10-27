@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ariane Mae Naig — IT Student, Graphic Designer &amp; Web Developer</title>
+  <meta name="description" content="Portfolio of Ariane Mae Naig, a BSIT student at PUP Sta. Mesa and aspiring graphic designer and web developer crafting visually engaging, user-focused digital experiences.">
+  <meta name="theme-color" content="#f8f5ff">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ariane Mae Naig — Portfolio">
+  <meta property="og:description" content="IT student, graphic designer and web developer. Design that works as good as it looks.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <link rel="preload" href="assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/dm-sans-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="aura" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">a</span>
+        <span>ariane<span class="brand__dot">.</span></span>
+      </a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
+        <li><a class="nav__link" href="about.html">About</a></li>
+        <li><a class="nav__link" href="projects.html">Projects</a></li>
+        <li><a class="nav__link" href="certifications.html">Certifications</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn btn--ghost nav__cta" href="contact.html">Let's talk</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero__copy">
+        <p class="eyebrow"><span class="eyebrow__dot"></span> Open to internships · Manila, PH</p>
+        <h1 class="hero__name">
+          <span>Ariane</span>
+          <span>Mae <em>Naig</em><svg class="hero__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c.6 6.2 5.8 11.4 12 12-6.2.6-11.4 5.8-12 12-.6-6.2-5.8-11.4-12-12C6.2 11.4 11.4 6.2 12 0Z"/></svg></span>
+        </h1>
+        <p class="hero__intro">
+          <strong>Hi, I'm Ariane.</strong> An IT student and aspiring Graphics Designer &amp; Web Developer crafting visually engaging, user-focused digital experiences. Grounded in <strong>C, Python, Java, Cobol, SQL, HTML, CSS &amp; JavaScript</strong>, I turn creative ideas into clean code and compelling visual designs.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="projects.html">
+            View my projects
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="contact.html">Get in touch</a>
+        </div>
+        <ul class="hero__meta">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            PUP Sta. Mesa
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 8 10-4 10 4-10 4L2 8Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/></svg>
+            BSIT · 3rd year
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
+            Design + code
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero__stage">
+        <div class="hero__halo" aria-hidden="true"></div>
+        <svg class="hero__ring" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="1.5 6" stroke-linecap="round"/>
+          <circle cx="50" cy="3" r="2" fill="currentColor"/>
+        </svg>
+        <img class="hero__portrait" src="assets/img/ariane-hero.webp" alt="Ariane Mae Naig smiling, wearing a red blazer" width="1240" height="1448" fetchpriority="high">
+        <div class="sticker sticker--work"><span class="sticker__dot"></span> Open to work</div>
+        <div class="sticker sticker--edu">
+          <span class="sticker__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 8 10-4 10 4-10 4L2 8Z"/></svg>
+          </span>
+          3rd year BSIT
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span class="marquee__item">C</span>
+          <span class="marquee__item">Python</span>
+          <span class="marquee__item">Java</span>
+          <span class="marquee__item">Cobol</span>
+          <span class="marquee__item">SQL</span>
+          <span class="marquee__item">HTML5</span>
+          <span class="marquee__item">CSS3</span>
+          <span class="marquee__item">JavaScript</span>
+          <span class="marquee__item">Next.js</span>
+          <span class="marquee__item">Tailwind CSS</span>
+          <span class="marquee__item">Figma</span>
+          <span class="marquee__item">Photoshop</span>
+          <span class="marquee__item">Git / GitHub</span>
+        </div>
+        <div class="marquee__group">
+          <span class="marquee__item">C</span>
+          <span class="marquee__item">Python</span>
+          <span class="marquee__item">Java</span>
+          <span class="marquee__item">Cobol</span>
+          <span class="marquee__item">SQL</span>
+          <span class="marquee__item">HTML5</span>
+          <span class="marquee__item">CSS3</span>
+          <span class="marquee__item">JavaScript</span>
+          <span class="marquee__item">Next.js</span>
+          <span class="marquee__item">Tailwind CSS</span>
+          <span class="marquee__item">Figma</span>
+          <span class="marquee__item">Photoshop</span>
+          <span class="marquee__item">Git / GitHub</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section wrap">
+      <div class="section__head reveal">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2 class="section__title" style="margin-top:16px">Things I've <em>built</em> &amp; designed.</h2>
+        </div>
+        <a class="link-arrow" href="projects.html">
+          All projects
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+      </div>
+
+      <div class="work-grid">
+        <a class="work work--wide reveal" href="projects.html#eyewatch">
+          <div class="work__media work__media--screen">
+            <span class="work__badge">Featured · Web app</span>
+            <img src="assets/projects/eyewatch-teacher.webp" alt="EyeWatch teacher dashboard with live class metrics and student status cards" width="1600" height="1000" loading="lazy">
+          </div>
+          <div class="work__body">
+            <h3 class="work__title">EyeWatch <small>2026</small></h3>
+            <p class="work__text">A real-time student activity monitor that gives educators a live view of focus, session length and away time — without invasive surveillance.</p>
+            <div class="work__foot">
+              <div class="tags">
+                <span class="tag tag--accent">Next.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Tailwind</span>
+              </div>
+              <span class="link-arrow">Case study
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a class="work work--narrow reveal" href="projects.html#designs" style="--delay:90ms">
+          <div class="collage">
+            <img src="assets/designs/guess-what.webp" alt="Guess What poster for Kalikasan Kilos Kabataan" width="1500" height="1500" loading="lazy">
+            <img src="assets/designs/kalikasan.webp" alt="Kalikasan Kilos Kabataan feature poster" width="1500" height="1500" loading="lazy">
+            <img src="assets/designs/happy-birthday.webp" alt="Vintage scroll birthday greeting" width="1500" height="1500" loading="lazy">
+            <img src="assets/designs/tarot-scroll.webp" alt="Purple tarot-inspired scroll layout" width="1500" height="1500" loading="lazy">
+          </div>
+          <div class="work__body">
+            <h3 class="work__title">Design samples <small>Graphics</small></h3>
+            <p class="work__text">Social posters, event greetings and illustrated layouts — from concept and vector artwork to final type.</p>
+            <div class="work__foot">
+              <div class="tags">
+                <span class="tag">Photoshop</span>
+                <span class="tag">Illustration</span>
+              </div>
+              <span class="link-arrow">Browse
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a class="work work--split reveal" href="projects.html#portfolio">
+          <div class="work__body">
+            <h3 class="work__title">This portfolio <small>Website</small></h3>
+            <p class="work__text">A pastel-purple portfolio with a cursor-reactive aura background, an accessible flip business card and a QR code that opens the live site.</p>
+            <div class="work__foot">
+              <div class="tags">
+                <span class="tag tag--accent">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <span class="link-arrow">How it's made
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock__window">
+              <div class="mock__bar"><i></i><i></i><i></i><span>ariane-naig</span></div>
+              <div class="mock__screen">
+                <div class="mock__row">
+                  <span>ariane.</span>
+                  <span class="mock__dots"><i></i><i></i><i></i><i></i></span>
+                </div>
+                <div class="mock__name" style="margin-top:10px">Ariane<br>Mae <em>Naig</em></div>
+                <div class="mock__line mock__line--short" style="margin-top:10px"></div>
+                <div class="mock__line mock__line--tiny"></div>
+                <div class="mock__pill" style="margin-top:8px"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="teaser reveal">
+        <div class="teaser__avatar">
+          <img src="assets/img/ariane-about.webp" alt="Close-up portrait of Ariane Mae Naig" width="900" height="900" loading="lazy">
+        </div>
+        <div class="teaser__body">
+          <p class="eyebrow">A little about me</p>
+          <p class="teaser__quote" style="margin-top:16px">I bridge the gap between <em>aesthetics</em> and functionality.</p>
+          <p class="lead" style="margin-top:16px">Third year BSIT student at PUP Sta. Mesa. My journey started with visual design — brand identities, vector illustrations, UI layouts — before expanding into code to bring those designs to life on the web.</p>
+          <a class="btn btn--soft" href="about.html">
+            More about me
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="cta-band reveal">
+        <p class="eyebrow">Let's collaborate</p>
+        <h2>Have a project in <em>mind</em>?</h2>
+        <p>I'm open to internships, freelance design work and collaborative builds. Say hello — I'd love to hear about it.</p>
+        <div class="cta-band__actions">
+          <a class="btn btn--primary" href="contact.html">
+            Get in touch
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="mailto:ariane.naig02@gmail.com">ariane.naig02@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">a</span>
+          <span>ariane<span class="brand__dot">.</span></span>
+        </a>
+        <p>IT student, graphic designer and web developer based in Manila, Philippines.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="mailto:ariane.naig02@gmail.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/ariane-mae-882720329/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="tel:+639694243015">SMS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Ariane Mae Naig</span>
+      <span>Built with HTML, CSS &amp; JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/background.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ariane Mae Naig — Projects &amp; Case Studies</title>
+  <meta name="description" content="Ariane Mae Naig's projects page — EyeWatch web app, graphic design showcase, and portfolio website.">
+  <link rel="preload" href="assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/dm-sans-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="aura" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">a</span>
+        <span>ariane<span class="brand__dot">.</span></span>
+      </a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="about.html">About</a></li>
+        <li><a class="nav__link" href="projects.html" aria-current="page">Projects</a></li>
+        <li><a class="nav__link" href="certifications.html">Certifications</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn btn--ghost nav__cta" href="contact.html">Let's talk</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section wrap">
+      <div class="section__head reveal">
+        <div>
+          <p class="eyebrow">Portfolio &amp; Showcase</p>
+          <h1 class="section__title" style="margin-top:12px">Featured <em>Work</em> &amp; Designs</h1>
+        </div>
+        <div class="case__actions" style="margin-top:8px">
+          <a class="btn btn--soft btn--small" href="#web-projects">Web Apps</a>
+          <a class="btn btn--soft btn--small" href="#designs">Graphic Design</a>
+        </div>
+      </div>
+
+      <!-- Section 1: Web Applications & Systems -->
+      <section id="web-projects" style="margin-bottom:clamp(44px,6vw,72px)">
+        <div class="reveal" style="margin-bottom:clamp(20px,2.5vw,28px)">
+          <p class="eyebrow">Development</p>
+          <h2 style="font-family:var(--font-display);font-size:clamp(1.5rem,2.4vw,2rem);letter-spacing:-0.02em;margin-top:4px">Web Applications &amp; Prototypes</h2>
+        </div>
+
+        <div style="display:grid;gap:clamp(32px,4vw,48px)">
+          <!-- EyeWatch Case -->
+          <article class="case reveal" id="eyewatch">
+            <div class="case__header">
+              <div>
+                <span class="work__badge" style="margin-bottom:10px;display:inline-block">Featured Project · Web Application</span>
+                <h3 class="case__title">EyeWatch <small style="font-size:0.5em;color:var(--ink-3);font-family:var(--font-sans)">2026</small></h3>
+                <p class="case__meta" style="margin-top:8px">
+                  <span class="tag tag--accent">Framework</span>: Next.js (App Router) · TypeScript · Tailwind CSS
+                </p>
+              </div>
+              <div class="case__actions">
+                <a class="link-arrow case__route" href="https://github.com/ariane-naig/eyewatch" target="_blank" rel="noopener">
+                  View on GitHub
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Controlled, non-full-page preview -->
+            <div class="case__media" data-lightbox data-src="assets/projects/eyewatch-teacher.webp" data-caption="EyeWatch — Teacher Dashboard showing live student engagement metrics and status cards" style="cursor:zoom-in">
+              <img src="assets/projects/eyewatch-teacher.webp" alt="EyeWatch teacher dashboard preview" width="1600" height="1000" loading="lazy">
+              <figcaption style="display:flex;align-items:center;justify-content:space-between">
+                <span>Teacher dashboard showing live class metrics and student status</span>
+                <span style="font-size:0.7rem;font-weight:600;color:var(--violet-deep);text-transform:uppercase">Click to expand</span>
+              </figcaption>
+            </div>
+
+            <div class="case__body">
+              <p class="case__overview">
+                EyeWatch is a web-based, real-time student activity and engagement monitoring prototype built to give educators visibility into online classroom participation. It tracks student focus, meeting duration, and active tab states without intrusive surveillance.
+              </p>
+
+              <div class="feature-grid">
+                <div class="feature">
+                  <div class="feature__head">
+                    <span class="feature__route">/student</span>
+                    <h4>Student Activity Tracker</h4>
+                  </div>
+                  <p>
+                    <strong>Automated Focus Tracking:</strong> Uses the Page Visibility API to automatically detect when a student is actively viewing the class tab versus navigating away or minimizing.
+                  </p>
+                  <p>
+                    <strong>Session Metrics:</strong> Live timer showing real-time duration spent in class.
+                  </p>
+                  <p>
+                    <strong>Simulator Controls:</strong> Interactive activity toggle (Active, Browsing, Idle, Screen Sharing) for testing.
+                  </p>
+                </div>
+
+                <div class="feature">
+                  <div class="feature__head">
+                    <span class="feature__route">/teacher</span>
+                    <h4>Teacher Dashboard</h4>
+                  </div>
+                  <p>
+                    <strong>Live Overview:</strong> Aggregate class metrics showing total connected students, overall active engagement percentages, and session length.
+                  </p>
+                  <p>
+                    <strong>Color-Coded Status:</strong> Live status indicators (Green = Active, Yellow = Idle, Red = On External Tab/Away) for every participant.
+                  </p>
+                  <p>
+                    <strong>Attention Alerts:</strong> Flags students who have been away or inactive for extended periods.
+                  </p>
+                </div>
+              </div>
+
+              <div class="arch" style="margin-top:20px">
+                <div>
+                  <dt>Privacy</dt>
+                  <dd>Standard browser APIs only — no background spyware.</dd>
+                </div>
+                <div>
+                  <dt>Architecture</dt>
+                  <dd>React Server Components + Client Hooks.</dd>
+                </div>
+                <div>
+                  <dt>Styling</dt>
+                  <dd>Tailwind CSS responsive design system.</dd>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Portfolio Case -->
+          <article class="case reveal" id="portfolio">
+            <div class="case__header">
+              <div>
+                <span class="work__badge" style="margin-bottom:10px;display:inline-block">Website · Personal Portfolio</span>
+                <h3 class="case__title">This Portfolio Website</h3>
+                <p class="case__meta" style="margin-top:8px">
+                  <span class="tag tag--accent">Stack</span>: HTML5 · CSS3 · Vanilla JavaScript (No heavy frameworks or build tools)
+                </p>
+              </div>
+              <div class="case__actions">
+                <a class="link-arrow" href="index.html">
+                  Explore Home
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Controlled, non-full-page preview -->
+            <div class="case__media" data-lightbox data-src="assets/img/og-image.jpg" data-caption="Ariane Mae Naig — Portfolio Social Card &amp; Aesthetic Design" style="cursor:zoom-in">
+              <img src="assets/img/og-image.jpg" alt="Portfolio preview graphic" width="1200" height="630" loading="lazy">
+              <figcaption style="display:flex;align-items:center;justify-content:space-between">
+                <span>Custom design system, typography and visual identity</span>
+                <span style="font-size:0.7rem;font-weight:600;color:var(--violet-deep);text-transform:uppercase">Click to expand</span>
+              </figcaption>
+            </div>
+
+            <div class="case__body">
+              <p class="case__overview">
+                A custom-built, pastel-purple portfolio focused on high-performance typography, smooth micro-interactions, accessible markup, and zero bundle bloat.
+              </p>
+
+              <div class="feature-grid">
+                <div class="feature">
+                  <div class="feature__head">
+                    <span class="feature__route">Aesthetic</span>
+                    <h4>Visual &amp; Interactive Details</h4>
+                  </div>
+                  <p>
+                    <strong>Cursor-Reactive Aura:</strong> Interactive canvas background that softly drifts with mouse movement.
+                  </p>
+                  <p>
+                    <strong>3D Flip Business Card:</strong> Interactive virtual card featuring an embedded high-res QR code that links directly to this live site.
+                  </p>
+                </div>
+
+                <div class="feature">
+                  <div class="feature__head">
+                    <span class="feature__route">Performance</span>
+                    <h4>Core Web Vitals &amp; UX</h4>
+                  </div>
+                  <p>
+                    <strong>Zero Dependencies:</strong> Sub-second load times without runtime frameworks or bundlers.
+                  </p>
+                  <p>
+                    <strong>Accessibility:</strong> Built with semantic HTML5, skip-links, focus outlines, and full keyboard navigation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section 2: Graphic Design & Creative Work -->
+      <section id="designs" style="margin-bottom:clamp(44px,6vw,72px)">
+        <div class="reveal" style="margin-bottom:clamp(20px,2.5vw,28px)">
+          <p class="eyebrow">Creative &amp; Visual</p>
+          <h2 style="font-family:var(--font-display);font-size:clamp(1.5rem,2.4vw,2rem);letter-spacing:-0.02em;margin-top:4px">Graphic Design Showcase</h2>
+          <p style="color:var(--ink-2);max-width:62ch;font-size:0.92rem;margin-top:8px">
+            Social media posters, campaign graphics, digital compositions, and illustrated layouts created with Adobe Photoshop, Illustrator, and Figma. Click any piece to inspect in full resolution.
+          </p>
+        </div>
+
+        <div class="gallery reveal">
+          <!-- 1: Guess What -->
+          <article class="gallery__item" data-lightbox data-src="assets/designs/guess-what.webp" data-caption="Coffee Jelly Soft Launch ('Guess What') — Promotional Event Poster">
+            <div class="gallery__thumb">
+              <img src="assets/designs/guess-what.webp" alt="Coffee Jelly Soft Launch poster" width="1500" height="1500" loading="lazy">
+              <span class="gallery__zoom-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+              </span>
+            </div>
+            <div class="gallery__caption">
+              <div>
+                <b>Guess What</b>
+                <span style="display:block;margin-top:2px">Social Promo Poster</span>
+              </div>
+              <span class="tag tag--accent" style="font-size:0.68rem;padding:3px 8px">Photoshop</span>
+            </div>
+          </article>
+
+          <!-- 2: Kalikasan -->
+          <article class="gallery__item" data-lightbox data-src="assets/designs/kalikasan.webp" data-caption="Kalikasan Kilos Kabataan — Environmental Youth Campaign Feature Poster">
+            <div class="gallery__thumb">
+              <img src="assets/designs/kalikasan.webp" alt="Kalikasan Kilos Kabataan campaign poster" width="1500" height="1500" loading="lazy">
+              <span class="gallery__zoom-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+              </span>
+            </div>
+            <div class="gallery__caption">
+              <div>
+                <b>Kalikasan Kilos</b>
+                <span style="display:block;margin-top:2px">Youth Campaign Poster</span>
+              </div>
+              <span class="tag tag--accent" style="font-size:0.68rem;padding:3px 8px">Vector &amp; Type</span>
+            </div>
+          </article>
+
+          <!-- 3: Happy Birthday -->
+          <article class="gallery__item" data-lightbox data-src="assets/designs/happy-birthday.webp" data-caption="Vintage Scroll Birthday Greeting — Custom Illustrated Digital Layout">
+            <div class="gallery__thumb">
+              <img src="assets/designs/happy-birthday.webp" alt="Vintage birthday scroll illustration" width="1500" height="1500" loading="lazy">
+              <span class="gallery__zoom-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+              </span>
+            </div>
+            <div class="gallery__caption">
+              <div>
+                <b>Birthday Scroll</b>
+                <span style="display:block;margin-top:2px">Illustrated Artwork</span>
+              </div>
+              <span class="tag tag--accent" style="font-size:0.68rem;padding:3px 8px">Illustration</span>
+            </div>
+          </article>
+
+          <!-- 4: Tarot Scroll -->
+          <article class="gallery__item" data-lightbox data-src="assets/designs/tarot-scroll.webp" data-caption="Tarot-Inspired Scroll UI — Stylized Purple Aesthetic Layout">
+            <div class="gallery__thumb">
+              <img src="assets/designs/tarot-scroll.webp" alt="Purple tarot scroll layout composition" width="1500" height="1500" loading="lazy">
+              <span class="gallery__zoom-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+              </span>
+            </div>
+            <div class="gallery__caption">
+              <div>
+                <b>Tarot Scroll UI</b>
+                <span style="display:block;margin-top:2px">Stylized Digital Layout</span>
+              </div>
+              <span class="tag tag--accent" style="font-size:0.68rem;padding:3px 8px">Figma / PS</span>
+            </div>
+          </article>
+
+          <!-- 5: Spider-Man Collage -->
+          <article class="gallery__item" data-lightbox data-src="assets/designs/spiderman-collage.webp" data-caption="Spider-Man Pop Art Collage — Character Illustration &amp; Digital Composition">
+            <div class="gallery__thumb">
+              <img src="assets/designs/spiderman-collage.webp" alt="Spider-Man pop art collage illustration" width="900" height="900" loading="lazy">
+              <span class="gallery__zoom-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+              </span>
+            </div>
+            <div class="gallery__caption">
+              <div>
+                <b>Spider-Man Collage</b>
+                <span style="display:block;margin-top:2px">Pop-Art Composition</span>
+              </div>
+              <span class="tag tag--accent" style="font-size:0.68rem;padding:3px 8px">Digital Art</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Bottom CTA Banner -->
+      <section class="cta-band reveal">
+        <p class="eyebrow">Let's work together</p>
+        <h2>Interested in a project or <em>design</em>?</h2>
+        <p>I'm always excited to collaborate on web development and graphic design projects.</p>
+        <div class="cta-band__actions">
+          <a class="btn btn--primary" href="contact.html">
+            Contact me
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="certifications.html">View my credentials</a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">a</span>
+          <span>ariane<span class="brand__dot">.</span></span>
+        </a>
+        <p>IT student, graphic designer and web developer based in Manila, Philippines.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="mailto:ariane.naig02@gmail.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/ariane-mae-882720329/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="tel:+639694243015">SMS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Ariane Mae Naig</span>
+      <span>Built with HTML, CSS &amp; JavaScript</span>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+    <button class="lightbox__close" type="button" aria-label="Close lightbox">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Next image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" src="" alt="">
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="assets/js/background.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

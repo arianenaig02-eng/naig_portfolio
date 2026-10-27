@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ariane Mae Naig — About</title>
+  <meta name="description" content="Ariane Mae Naig's about page — BSIT 3rd year student at PUP Sta. Mesa, aspiring graphic designer and web developer.">
+  <link rel="preload" href="assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/dm-sans-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="aura" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">a</span>
+        <span>ariane<span class="brand__dot">.</span></span>
+      </a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="about.html" aria-current="page">About</a></li>
+        <li><a class="nav__link" href="projects.html">Projects</a></li>
+        <li><a class="nav__link" href="certifications.html">Certifications</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn btn--ghost nav__cta" href="contact.html">Let's talk</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section wrap">
+      <div class="section__head reveal">
+        <div>
+          <p class="eyebrow">About me</p>
+          <h2 class="section__title">Who <em>I am</em></h2>
+        </div>
+        <a class="link-arrow" href="index.html">Back home</a>
+      </div>
+
+      <section class="about-grid reveal">
+        <div class="profile-card">
+          <div class="profile-card__photo">
+            <img src="assets/img/ariane-about.webp" alt="Ariane Mae Naig" width="400" height="400" loading="lazy">
+          </div>
+          <div class="profile-card__name">Ariane</div>
+          <div class="profile-card__role">3rd year BSIT student</div>
+          <div class="profile-card__actions">
+            <a class="btn btn--soft" href="tel:+639694243015">Call <span>+63 969 424 3015</span></a>
+            <a class="btn btn--soft" href="mailto:ariane.naig02@gmail.com">Email</a>
+          </div>
+        </div>
+
+        <div class="about-body">
+          <p>I'm a 3rd year <strong>BS Information Technology</strong> student at <strong>Polytechnic University of the Philippines — Sta. Mesa Campus</strong>. My journey started with visual design — creating brand identities, vector illustrations, and UI layouts — before expanding into coding to bring those designs to life on the web.</p>
+
+          <p>I bridge the gap between aesthetics and functionality. Whether designing an intuitive interface or engineering solid logic, I craft digital experiences that are both beautiful and dependable. My technical knowledge spans <strong>C, Python, Java, Cobol, SQL, HTML, CSS, and JavaScript</strong>, paired with frameworks like <strong>Next.js and Tailwind CSS</strong> and design tools like <strong>Figma and Adobe Photoshop</strong>.</p>
+
+          <dl class="facts">
+            <div class="fact">
+              <dt>Program</dt>
+              <dd>Bachelor of Science in Information Technology</dd>
+            </div>
+            <div class="fact">
+              <dt>Year</dt>
+              <dd>3rd year</dd>
+            </div>
+            <div class="fact">
+              <dt>Institution</dt>
+              <dd>Polytechnic University of the Philippines — Sta. Mesa Campus</dd>
+            </div>
+            <div class="fact">
+              <dt>Location</dt>
+              <dd>Manila, Philippines</dd>
+            </div>
+          </dl>
+
+          <!-- Skills section -->
+          <section class="skills-section reveal" style="padding-top:clamp(28px,3.5vw,44px); margin-top:clamp(28px,3.5vw,44px); border-top:1px solid var(--line)">
+            <div class="section__head" style="margin-bottom:clamp(18px,2.5vw,28px)">
+              <div>
+                <p class="eyebrow">Skills &amp; Expertise</p>
+                <h3 class="section__title" style="font-size:clamp(1.4rem,2.2vw,1.8rem); margin-top:4px">Technical &amp; Creative</h3>
+              </div>
+            </div>
+
+            <div class="skills">
+              <!-- Programming Languages -->
+              <div class="skill-card">
+                <div class="skill-card__label">
+                  <i aria-hidden="true"></i>
+                  <span>Languages</span>
+                </div>
+                <div class="chips">
+                  <span class="chip">C</span>
+                  <span class="chip">Python</span>
+                  <span class="chip">Java</span>
+                  <span class="chip">Cobol</span>
+                  <span class="chip">SQL</span>
+                  <span class="chip">HTML</span>
+                  <span class="chip">CSS</span>
+                  <span class="chip">JavaScript</span>
+                </div>
+              </div>
+
+              <!-- Web Development -->
+              <div class="skill-card">
+                <div class="skill-card__label">
+                  <i aria-hidden="true"></i>
+                  <span>Frameworks &amp; Web</span>
+                </div>
+                <div class="chips">
+                  <span class="chip">Next.js</span>
+                  <span class="chip">Tailwind CSS</span>
+                  <span class="chip">Sass</span>
+                  <span class="chip">Git / GitHub</span>
+                  <span class="chip">Responsive Design</span>
+                </div>
+              </div>
+
+              <!-- Design & Creative -->
+              <div class="skill-card">
+                <div class="skill-card__label">
+                  <i aria-hidden="true"></i>
+                  <span>Design &amp; Creative</span>
+                </div>
+                <div class="chips">
+                  <span class="chip">Figma</span>
+                  <span class="chip">Adobe Photoshop</span>
+                  <span class="chip">Procreate</span>
+                  <span class="chip">Vector Illustration</span>
+                  <span class="chip">UI Design</span>
+                </div>
+              </div>
+
+              <!-- Core IT Knowledge -->
+              <div class="skill-card">
+                <div class="skill-card__label">
+                  <i aria-hidden="true"></i>
+                  <span>Core IT Knowledge</span>
+                </div>
+                <div class="chips">
+                  <span class="chip">Database Management (SQL)</span>
+                  <span class="chip">Data Structures</span>
+                  <span class="chip">Web Performance</span>
+                  <span class="chip">Cross-Browser Testing</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End skills section -->
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">a</span>
+          <span>ariane<span class="brand__dot">.</span></span>
+        </a>
+        <p>IT student, graphic designer and web developer based in Manila, Philippines.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="mailto:ariane.naig02@gmail.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/ariane-mae-882720329/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="tel:+639694243015">SMS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Ariane Mae Naig</span>
+      <span>Built with HTML, CSS &amp; JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/background.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
