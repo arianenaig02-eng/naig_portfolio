@@ -20,7 +20,8 @@ FONT_DIR = ROOT / "tools" / "fonts"
 for folder in (IMG, DOWNLOADS):
     folder.mkdir(parents=True, exist_ok=True)
 
-SITE_URL = "https://ariane-naig.vercel.app"
+SITE_URL = "https://naigportfolio-0002.vercel.app/"
+DISPLAY_URL = "NAIGPORTFOLIO-0002.VERCEL.APP"
 
 NAME = "Ariane Mae Naig"
 ROLE = "IT Student  ·  Graphic Designer  ·  Web Developer"
@@ -161,7 +162,7 @@ def card_front() -> Image.Image:
         font=fraunces(26, 400, 60, 1, 144, italic=True),
         fill=(122, 96, 158),
     )
-    tracked(draw, (x, 516), "ARIANE-NAIG.VERCEL.APP", dm(12, 600), (168, 143, 202), 2.6)
+    tracked(draw, (x, 516), DISPLAY_URL, dm(12, 600), (168, 143, 202), 2.6)
     return card
 
 
@@ -183,7 +184,7 @@ def card_back() -> Image.Image:
     draw.text((x, 104), "Scan to see", font=fraunces(44, 500, 40, 1, 144), fill=(255, 255, 255))
     draw.text((x, 158), "the work.", font=fraunces(44, 500, 40, 1, 144), fill=(214, 190, 255))
 
-    tracked(draw, (x, 236), "ARIANE-NAIG.VERCEL.APP", dm(13, 600), (206, 186, 240), 2.6)
+    tracked(draw, (x, 236), DISPLAY_URL, dm(13, 600), (206, 186, 240), 2.6)
 
     draw.line((x, 306, 640, 306), fill=(255, 255, 255, 45), width=2)
 
